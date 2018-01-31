@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>电影网</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<!-- 导航部分 -->
+    <div class="nav">
+    	<!-- 导航栏上部 -->
+    	<div class="nav_up">
+    		<div class="nav_up_left">
+    			<span>电影网</span>
+    		</div>
+    		
+    		<div class="nav_up_right">
+    			<span><a href="../login/login.html">登录</a></span>
+    			<span><a href="../regist/regist.html">注册</a></span>
+    		</div>
+    	</div>
+    	<!-- 导航栏logo以及搜索部分 -->
+    	<div class="nav_logo">
+    		 <img src="img/main/logo1.png" class="logo">
+          <form class="navbar-form navbar-right sousuo">
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="搜索片名导演" style="width: 360px">
+		        </div>
+		        <button type="submit" class="btn btn-default">搜索</button>
+          </form>
+    	</div>
+    	<!-- 导航栏的分类部分 -->
+    	<div class="nav_sort">
+    		<ul>
+              <li class="active"><a href="index.html" style="text-decoration: none;color: #ffffff">首页</a></li>
+              <li>电影</li>   
+              <li>电视剧</li>   
+              <li>购票</li>   
+              <li>年度top10</li>
+              <li>影评</li>   
+            </ul>
+    	</div>
+    </div>
+    <!-- 主体展示部分 -->
+<div class="main">
+      <!-- 轮播图展示 -->
+    <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>   
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="img/main/tcqs.jpg" alt="天才枪手" title="天才枪手">
+              </div>
+              <div class="item">
+                <img src="img/main/wptg.jpg" alt="王牌特工" title="王牌特工">
+              </div>
+              <div class="item">
+                <img src="img/main/qqfb.jpg" alt="全球风暴" title="全球风暴">
+              </div>
+              <div class="item">
+                <img src="img/main/ktl.jpg" alt="空天猎" title="空天猎">
+              </div>
+               <div class="item">
+                <img src="img/main/yldj.jpg" alt="英伦对决" title="英伦对决">
+              </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel" 
+               data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" 
+               data-slide="next">&rsaquo;</a>
+    </div> 
+    <div class="movies">
+              <div class="kind-title">
+                热门电影
+                <span class="more" style="float: right;font-size: 16px;cursor: pointer;">更多&gt;&gt;</span>
+              </div>
+              <div class="hot_movies">
+                    <div class="hot-item">
+                       <img src="img/main/qqfb_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">全球风暴 <span class="movie_score">-6.4分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">科幻</span><span class="tag">灾难</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/jxtg.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">王牌特工 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">喜剧</span><span class="tag">动作</span><span class="tag">冒险</span>
+                       </p>
+                         <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/yldj_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">英伦对决 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">惊悚</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/ktl_.jpg">
+                        <span class="HD-type">高清</span>
+                       <p class="movie_name">空天猎 <span class="movie_score">-5.0分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">动作</span><span class="tag">战争</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/lxdfk.jpg">
+                        <span class="HD-type super-HD">超清</span>
+                       <p class="movie_name">楼下的房客 <span class="movie_score">-6.3分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">悬疑</span><span class="tag">奇幻</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+              </div>
+              <div class="kind-title">
+                最新电影
+                <span class="more" style="float: right;font-size: 16px;cursor: pointer;">更多&gt;&gt;</span>
+              </div>
+              <div class="hot_movies new-movies">
+                    <div class="hot-item">
+                       <img src="img/main/qqfb_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">全球风暴 <span class="movie_score">-6.4分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">科幻</span><span class="tag">灾难</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/jxtg.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">王牌特工 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">喜剧</span><span class="tag">动作</span><span class="tag">冒险</span>
+                       </p>
+                         <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/yldj_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">英伦对决 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">惊悚</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/ktl_.jpg">
+                        <span class="HD-type">高清</span>
+                       <p class="movie_name">空天猎 <span class="movie_score">-5.0分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">动作</span><span class="tag">战争</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/lxdfk.jpg">
+                        <span class="HD-type super-HD">超清</span>
+                       <p class="movie_name">楼下的房客 <span class="movie_score">-6.3分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">悬疑</span><span class="tag">奇幻</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                    <div class="hot-item">
+                       <img src="img/main/qqfb_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">全球风暴 <span class="movie_score">-6.4分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">科幻</span><span class="tag">灾难</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/jxtg.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">王牌特工 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">喜剧</span><span class="tag">动作</span><span class="tag">冒险</span>
+                       </p>
+                         <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/yldj_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">英伦对决 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">惊悚</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/ktl_.jpg">
+                        <span class="HD-type">高清</span>
+                       <p class="movie_name">空天猎 <span class="movie_score">-5.0分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">动作</span><span class="tag">战争</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/lxdfk.jpg">
+                        <span class="HD-type super-HD">超清</span>
+                       <p class="movie_name">楼下的房客 <span class="movie_score">-6.3分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">悬疑</span><span class="tag">奇幻</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/qqfb_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">全球风暴 <span class="movie_score">-6.4分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">科幻</span><span class="tag">灾难</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/jxtg.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">王牌特工 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">喜剧</span><span class="tag">动作</span><span class="tag">冒险</span>
+                       </p>
+                         <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/yldj_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">英伦对决 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">惊悚</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/ktl_.jpg">
+                        <span class="HD-type">高清</span>
+                       <p class="movie_name">空天猎 <span class="movie_score">-5.0分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">动作</span><span class="tag">战争</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/lxdfk.jpg">
+                        <span class="HD-type super-HD">超清</span>
+                       <p class="movie_name">楼下的房客 <span class="movie_score">-6.3分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">悬疑</span><span class="tag">奇幻</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                    <div class="hot-item">
+                       <img src="img/main/qqfb_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">全球风暴 <span class="movie_score">-6.4分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">科幻</span><span class="tag">灾难</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/jxtg.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">王牌特工 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">喜剧</span><span class="tag">动作</span><span class="tag">冒险</span>
+                       </p>
+                         <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/yldj_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">英伦对决 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">惊悚</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/ktl_.jpg">
+                        <span class="HD-type">高清</span>
+                       <p class="movie_name">空天猎 <span class="movie_score">-5.0分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">动作</span><span class="tag">战争</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/lxdfk.jpg">
+                        <span class="HD-type super-HD">超清</span>
+                       <p class="movie_name">楼下的房客 <span class="movie_score">-6.3分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">悬疑</span><span class="tag">奇幻</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/qqfb_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">全球风暴 <span class="movie_score">-6.4分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">科幻</span><span class="tag">灾难</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/jxtg.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">王牌特工 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">喜剧</span><span class="tag">动作</span><span class="tag">冒险</span>
+                       </p>
+                         <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                      <img src="img/main/yldj_.jpg">
+                       <span class="HD-type">高清</span>
+                       <p class="movie_name">英伦对决 <span class="movie_score">-7.2分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">动作</span><span class="tag">惊悚</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/ktl_.jpg">
+                        <span class="HD-type">高清</span>
+                       <p class="movie_name">空天猎 <span class="movie_score">-5.0分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">动作</span><span class="tag">战争</span>
+                       </p>
+                        <div class="mot-k"><img src="img/main/play-icon.png"></div>
+                    </div>
+                     <div class="hot-item">
+                       <img src="img/main/lxdfk.jpg">
+                        <span class="HD-type super-HD">超清</span>
+                       <p class="movie_name">楼下的房客 <span class="movie_score">-6.3分</span></p>
+                       <p class="movie_type">类型：
+                        <span class="tag">剧情</span><span class="tag">悬疑</span><span class="tag">奇幻</span>
+                       </p>
+                        <div class="mot-k"><img src="img/play-icon.png"></div>
+                    </div>
+                     <div class="more-movies">更多精彩电影&gt;&gt;</div>  
+              </div>
+
+    </div>
+</div>
+
+ <script type="text/javascript">
+  // 热门电影悬浮特效
+   $(".hot_movies .hot-item").each(function(i){
+      //i就是li的索引， 给不同的i绑定不同的事件即可。
+        $(this).on("mouseover",function(){
+            // console.log($(this));
+            $(this).children('div.mot-k').css("display","block"); 
+        }).on("mouseout",function(){
+          $(this).children('div.mot-k').css("display","none");
+        })  
+   });
+  // 超清影视特有颜色
+  $(".super-HD").css("background","#337ab7");
+
+  $(".new-movies .hot-item").each(function(i){
+      // console.log(i)
+      if(i>4){
+        $(this).addClass("add-margin");
+      }
+  })
+ </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+html,body{
+	width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+}
+/*导航栏上部样式*/
+.nav_up{
+   height: 29px;
+   width: 100%;
+   background: #545652;
+   color:white;
+}
+.nav_up_left,.nav_up_right{
+	display: inline-block;
+	   font-size: 14px;
+}
+.nav_up_left{
+   line-height: 29px;
+   position: absolute;
+   left: 2%;
+}
+.nav_up_right{
+  line-height: 29px;
+  position: absolute;
+  right: 5%;
+}
+/*导航logo部分*/
+.nav_logo{
+   width: 100%;
+   height: 70px;
+   background:#f8f8f8; 
+}
+.logo{
+   height: 99%;
+   width: 200px;
+   margin-left: 13%;
+}
+/*导航搜索部分*/
+.sousuo{
+  position: absolute;
+  right: 13%;
+  top: 6%;
+}
+/*导航中的大分类*/
+.nav_sort{
+  width: 100%;
+  height: 45px;
+  background: #4284cc;
+  border-top: 1px solid #e3ebec;
+}
+.nav_sort ul li{ 
+  line-height: 45px;
+  list-style: none;
+  float: left;
+  padding-left: 3%;
+  color: white;
+  cursor: pointer;
+}
+.nav_sort ul{
+  margin-left: 10%;
+}
+/*主要展示部分*/
+.main{
+    width: 100%;
+    height: 100%;
+}
+/*轮播图设置*/
+#myCarousel{
+  width:74%;
+  margin-top: 10px;
+  margin-left: 13%;
+}
+/*主页展示热门电影部分*/
+.kind-title{
+  color: #666666;
+  /*background: yellow;*/
+  height: 35px;
+  border-left: 3px solid #dd5862;
+  line-height: 35px;
+  font-size: 23px;
+  padding-left:0.5%;
+  width: 74%;
+  margin-left: 13%;
+  margin-top: 10px;
+}
+/*热门电影*/
+.hot_movies{
+  width: 74%;
+  height: 320px;
+  /*border:1px solid black;*/
+  margin-top: 10px;
+  margin-left: 13%;
+}
+/*中的每一项*/
+.hot-item{
+   position: relative;
+  float: left;
+  width: 19%;
+  height: 100%;
+  /*border:1px solid red;*/
+  margin-right: 0.99%;
+  /*margin-top: 20px;*/
+  background: white;
+}
+.hot-item img{
+  width:100%;
+  height: 82.5%;
+}
+.hot-item:hover{
+box-shadow: 2px 2px 5px #888888;
+cursor: pointer;
+}
+.movie_name{
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  margin-left: 3%;
+  /*border:1px solid red;*/
+}
+.movie_score{
+  font-size: 13px;
+  color: #777;
+}
+.movie_type{
+  width: 100%;
+  height: 26px;
+  font-size: 13px;
+  color: #777;
+  margin-left: 3%;
+ line-height: 26px;
+ margin-top: -5px;
+ /*border: 1px solid red;*/
+}
+/*影片类型标记*/
+.tag{
+   width: 15%;
+   height: 80%;
+   font-size: 12px;
+   background: #dcdcdc;
+   margin-right: 5px;
+}
+/*影片模态框*/
+.mot-k{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width:100%;
+ height:82.5%;
+ background: #000;
+ opacity: 0.4;
+ z-index: 99;
+ display: none;
+}
+.mot-k img{
+  width: 37.7%;
+  height: 27.2%;
+  margin-top: 50%;
+  margin-left:30%;
+}
+/*清晰程度*/
+.HD-type{
+  width: 30px;
+  height: 20px;
+  background: #5cb85c;
+  color: white;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  bottom: 56px;
+  font-size: 13px;
+ font-family: 微软雅黑;
+}
+/*最新电影*/
+.new-movies{
+  position: relative;
+}
+.add-margin{
+   margin-top: 10px;
+}
+/*更多电影*/
+/*.movies{
+   width: 100%;
+}*/
+.more-movies{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ width: 100%;
+ height: 30px;
+ color: white;
+ text-align: center;
+ line-height: 30px;
+ background: #449d44;
+ /*border:1px solid red;*/
+ cursor: pointer;
+ display: inline-block;
+ border-radius: 3px;
+}
